@@ -6,4 +6,3 @@ if y / x > 100:
 else:
     calc = x * 90
 print("%.2f" % (calc))
-print(y / x)

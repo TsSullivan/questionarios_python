@@ -1,6 +1,25 @@
 try:
     x = int(input())
     y = int(input())
+    l = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+
+except ValueError:
+    print("O valor inserido não pode ser convertido para inteiro")
+
+else: 
+    if y % 4 == 0 and y % 100 != 0 and x == 2 or y % 4 == 0 and y % 400 == 0 and x == 2:
+        print(29)
+    else:
+        for i in range(13):
+            if i == x:
+                print(l[i])
+    
+'''
+Verifiquem por esse código, caso não entendam o de cima
+
+try:
+    x = int(input())
+    y = int(input())
     l = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
 except ValueError:
@@ -33,3 +52,5 @@ else:
         print(l[10])
     elif x == 12:
         print(l[11])
+
+'''
