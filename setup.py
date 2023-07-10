@@ -14,11 +14,13 @@ except:
 
 else:
     print("Sucesso ao importar o módulo!")
-    with os.scandir('Questionario_1/') as files:
+    x, y = input("Digite o número do questionário e da questão: ").split(" ")
+    x, y = int(x), int(y)
+  
+    u = 'Questionario_' + str(x) + '/'
+
+    with os.scandir(u) as files:
         for entry in files:
-            print(entry.name)
-
-    #os.startfile('Questionario_1/tabuada.py')
-    #exec(open(folder[0]).read())
-
-    #import o_maior
+            if entry.name != '__pycache__' and int(entry.name[:2]) == y:
+                __import__(entry.name.replace('.py', ''))
+            

@@ -24,6 +24,6 @@ else:
 n1 = int(input())
 n2 = int(input())
 print ('{:.2f}'.format(n1+n2))
-print ('{:.2f}'.format( n1-n2))
+print ('{:.2f}'.format(n1-n2))
 print ('{:.2f}'.format(n1*n2))
 print ('{:.2f}'.format(n1/n2))
