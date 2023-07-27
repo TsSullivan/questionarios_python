@@ -2,6 +2,7 @@ import sys
 import os
 
 try:
+    sys.path.insert(0, 'Questionario_6/')
     sys.path.insert(0, 'Questionario_5/')
     sys.path.insert(0, 'Questionario_4/')
     sys.path.insert(0, 'Questionario_3/')
